@@ -113,13 +113,20 @@
     "summary": "初音ミク  錠剤 (TV Size)",
     "body": "初音ミク  錠剤 (TV Size)",
     "description": "初音ミク  錠剤 (TV Size) ",
-    "content_type": "text",
+    "content_type": "video",
     "cover_mode": "auto",
-    "cover": "",
+    "cover": "media/works/work_1_video_cover.jpg",
     "tags": [],
     "featured": true,
-    "authorization_status": "unknown",
+    "authorization_status": "licensed",
     "visibility": "public",
-    "assets": []
+    "assets": [
+      {
+        "type": "video",
+        "path": "media/works/work_1_01.mp4",
+        "format": "mp4",
+        "role": "main"
+      }
+    ]
   }
 ]

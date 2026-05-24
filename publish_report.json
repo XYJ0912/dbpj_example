@@ -1,7 +1,13 @@
 {
   "exported_works_count": 5,
-  "exported_assets_count": 8,
-  "warnings": [],
+  "exported_assets_count": 9,
+  "warnings": [
+    {
+      "check_type": "large_file",
+      "severity": "warning",
+      "message": "Some exported files exceed 20MB."
+    }
+  ],
   "errors": [],
   "skipped_private_assets": [],
   "skipped_restricted_assets": [],
@@ -10,9 +16,14 @@
     "matches": []
   },
   "large_file_check": {
-    "passed": true,
+    "passed": false,
     "threshold_mb": 20,
-    "matches": []
+    "matches": [
+      {
+        "path": "media/works/work_1_01.mp4",
+        "size_mb": 61.23
+      }
+    ]
   },
   "sensitive_file_check": {
     "passed": true,
