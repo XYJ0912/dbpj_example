@@ -1,0 +1,23 @@
+{
+  "display_name": "帕瓦大人",
+  "bio": "本大爷乃血之魔人帕瓦！高贵、强大、聪明绝顶，区区人类都该拜倒在本大爷脚下。这里收录本大爷的英姿、战绩、收藏与伟大记录。",
+  "avatar": "media/avatar.jpg",
+  "creator_tags": [
+    "帕瓦 血之魔人 公安对魔特异课"
+  ],
+  "contact_links": [
+    {
+      "label": "Email",
+      "url": "mailto:power@example.com"
+    },
+    {
+      "label": "X",
+      "url": "mailto:power@example.com"
+    },
+    {
+      "label": "Instagram",
+      "url": "mailto:power@example.com"
+    }
+  ],
+  "license_text": "本大爷的伟大形象只准用于赞美、膜拜、收藏与展示。未经本大爷允许，不许偷走、不许乱改、不许说本大爷坏话。违者由本大爷亲自制裁。"
+}

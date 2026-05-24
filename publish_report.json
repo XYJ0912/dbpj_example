@@ -1,0 +1,25 @@
+{
+  "exported_works_count": 5,
+  "exported_assets_count": 8,
+  "warnings": [],
+  "errors": [],
+  "skipped_private_assets": [],
+  "skipped_restricted_assets": [],
+  "local_path_leak_check": {
+    "passed": true,
+    "matches": []
+  },
+  "large_file_check": {
+    "passed": true,
+    "threshold_mb": 20,
+    "matches": []
+  },
+  "sensitive_file_check": {
+    "passed": true,
+    "matches": []
+  },
+  "api_key_pattern_check": {
+    "passed": true,
+    "matches": []
+  }
+}

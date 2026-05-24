@@ -1,0 +1,9 @@
+{
+  "template_id": "creator_gallery",
+  "theme": "warm_gallery",
+  "accent_color": "#8fb8a8",
+  "featured_work_ids": [
+    2,
+    1
+  ]
+}
