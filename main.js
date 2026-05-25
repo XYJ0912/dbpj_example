@@ -116,6 +116,10 @@ function isMarkdownAsset(asset) {
   return ['md', 'markdown'].includes(assetFormat(asset))
 }
 
+function isPdfAsset(asset) {
+  return assetFormat(asset) === 'pdf'
+}
+
 function init(siteData) {
   const profile = siteData.profile || demoData.profile
   const works = Array.isArray(siteData.works) ? siteData.works : []
@@ -498,6 +502,15 @@ function createRelatedAsset(asset) {
     audio.preload = 'metadata'
     audioWrap.appendChild(audio)
     item.appendChild(audioWrap)
+  } else if (type === 'document' && isPdfAsset(asset) && path) {
+    const documentWrap = make('div', 'related-document')
+    documentWrap.appendChild(make('span', '', 'PDF preview'))
+    const frame = make('iframe', 'pdf-preview')
+    frame.src = path
+    frame.title = 'PDF preview'
+    frame.loading = 'lazy'
+    documentWrap.appendChild(frame)
+    item.appendChild(documentWrap)
   } else if (type === 'document' && asset.text) {
     const documentWrap = make('div', 'related-document')
     documentWrap.appendChild(make('span', '', isMarkdownAsset(asset) ? 'Markdown preview' : 'Document text preview'))

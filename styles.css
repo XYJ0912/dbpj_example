@@ -644,6 +644,14 @@ h2 {
   gap: 10px;
 }
 
+.pdf-preview {
+  width: 100%;
+  min-height: 520px;
+  border: 1px solid var(--line-color);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
 .related-document pre {
   max-height: 320px;
   overflow: auto;
