@@ -1,6 +1,6 @@
 {
   "exported_works_count": 5,
-  "exported_assets_count": 9,
+  "exported_assets_count": 10,
   "warnings": [
     {
       "check_type": "large_file",
@@ -21,7 +21,7 @@
     "matches": [
       {
         "path": "media/works/work_1_01.mp4",
-        "size_mb": 61.23
+        "size_mb": 33.29
       }
     ]
   },
