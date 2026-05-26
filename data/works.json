@@ -1,5 +1,28 @@
 [
   {
+    "id": "work_6",
+    "title": "增加works示例",
+    "summary": "已知一个三级的内存架构（L1，L2，内存），其中L1的访问时间为1轮,平均在1000次对数据的访问中，在L1命中的次数为900。 如果L1的平均访问时间为7轮，计算L2的平均访问时间； 沿用上面的条件，如果内存的访问时间为200轮，L2的访问时间为60轮，计算平均在1000次数据访问中，需要访问内存的次数； 如果...",
+    "body": "已知一个三级的内存架构（L1，L2，内存），其中L1的访问时间为1轮,平均在1000次对数据的访问中，在L1命中的次数为900。\n\n如果L1的平均访问时间为7轮，计算L2的平均访问时间；\n\n沿用上面的条件，如果内存的访问时间为200轮，L2的访问时间为60轮，计算平均在1000次数据访问中，需要访问内存的次数；\n\n如果LOAD指令占总指令的20%，计算CPI。\n\n假设一个计算机按字节寻址，cache的大小为四行，每行的大小为1个字节，采用二路组相联映射，对于在地址0-7上的数据，按照以下顺序进行访问：2，6，7，1，7，3，4。\n\n采用FIFO替换策略，最后cache中的内容是多少？\n\n采用LRU替换策略，最后cache中的内容是多少？\n\n假设Memory按字节编址，内存总大小为4GB，主存块大小为4KB，cache采用四路组相联，LRU替换，写回策略。Cache能存储4MB数据。\n\n主存地址是如何划分的？\n\nCache有多少组？\n\n求Cache总大小。\n\n有如下 C 语言程序段：\n\nfor (k=0; k<100; k++)\n\na[k] = a[k] + 1;\n\n若数组 a 及变量 k 均为 int 型，int 型数据占 4B，数据 Cache 采用二路组相联映射方式，数据区大小为 64B、块大小为 16B，该程序段执行前 Cache 为空，该程序段执行过程中访问数组 a 的 Cache miss次数为？\n\n假设 Memory 按字节编址，cache 共 32 行，采用 4 路组关联映射方式，主存块大小为 64Bytes，所有编号都从 0 开始，Memory 中第 1763 号单元所在主存块对应的Cache 组号是？\n\n下列哪种方法可以减小miss惩罚：（）\n\n路预测（Way prediction）\n\n流水线缓存访问(Pipelined Cache Access)\n\n多bank缓存（Multibanked caches）\n\n关键词优先和提前重启（Critical word first and early restart）\n\n以下为一段循环代码：\n\nfor(i=0;i<N-1;i++){\n\n…=A[i];\n\n…\n\n}\n\n假设每次循环消耗10个cycles，内存延迟为100个cycles，cache块大小为4个字，为代码添加预取（prefetching）策略，该如何修改以上代码，以达到最优效果？\n\nPrefetching示例：\n\nfor(i=0;i<N-1;i++){\n\nprefetch(A[i+1]) //预取第i+1个数据\n\n…=A[i];\n\n…\n\n}",
+    "description": "一份计算机体系结构作业",
+    "content_type": "document",
+    "cover_mode": "auto",
+    "cover": "",
+    "tags": [],
+    "featured": false,
+    "authorization_status": "unknown",
+    "visibility": "public",
+    "assets": [
+      {
+        "type": "document",
+        "path": "media/works/work_6_01.docx",
+        "format": "docx",
+        "role": "main",
+        "text": "已知一个三级的内存架构（L1，L2，内存），其中L1的访问时间为1轮,平均在1000次对数据的访问中，在L1命中的次数为900。\n\n如果L1的平均访问时间为7轮，计算L2的平均访问时间；\n\n沿用上面的条件，如果内存的访问时间为200轮，L2的访问时间为60轮，计算平均在1000次数据访问中，需要访问内存的次数；\n\n如果LOAD指令占总指令的20%，计算CPI。\n\n假设一个计算机按字节寻址，cache的大小为四行，每行的大小为1个字节，采用二路组相联映射，对于在地址0-7上的数据，按照以下顺序进行访问：2，6，7，1，7，3，4。\n\n采用FIFO替换策略，最后cache中的内容是多少？\n\n采用LRU替换策略，最后cache中的内容是多少？\n\n假设Memory按字节编址，内存总大小为4GB，主存块大小为4KB，cache采用四路组相联，LRU替换，写回策略。Cache能存储4MB数据。\n\n主存地址是如何划分的？\n\nCache有多少组？\n\n求Cache总大小。\n\n有如下 C 语言程序段：\n\nfor (k=0; k<100; k++)\n\na[k] = a[k] + 1;\n\n若数组 a 及变量 k 均为 int 型，int 型数据占 4B，数据 Cache 采用二路组相联映射方式，数据区大小为 64B、块大小为 16B，该程序段执行前 Cache 为空，该程序段执行过程中访问数组 a 的 Cache miss次数为？\n\n假设 Memory 按字节编址，cache 共 32 行，采用 4 路组关联映射方式，主存块大小为 64Bytes，所有编号都从 0 开始，Memory 中第 1763 号单元所在主存块对应的Cache 组号是？\n\n下列哪种方法可以减小miss惩罚：（）\n\n路预测（Way prediction）\n\n流水线缓存访问(Pipelined Cache Access)\n\n多bank缓存（Multibanked caches）\n\n关键词优先和提前重启（Critical word first and early restart）\n\n以下为一段循环代码：\n\nfor(i=0;i<N-1;i++){\n\n…=A[i];\n\n…\n\n}\n\n假设每次循环消耗10个cycles，内存延迟为100个cycles，cache块大小为4个字，为代码添加预取（prefetching）策略，该如何修改以上代码，以达到最优效果？\n\nPrefetching示例：\n\nfor(i=0;i<N-1;i++){\n\nprefetch(A[i+1]) //预取第i+1个数据\n\n…=A[i];\n\n…\n\n}"
+      }
+    ]
+  },
+  {
     "id": "work_4",
     "title": "PDF&markdown示例",
     "summary": "《猫咪日常健康与行为记录表》笔记",
