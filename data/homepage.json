@@ -1,7 +1,7 @@
 {
   "template_id": "creator_gallery",
   "theme": "warm_gallery",
-  "accent_color": "#ff24af",
+  "accent_color": "#f7f1ea",
   "featured_work_ids": [
     1,
     2
